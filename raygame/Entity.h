@@ -13,6 +13,9 @@ public:
 	float YVeloctiy;
 	float YAcceleration;
 
-	
+	void Update() override;
+	void Start() override;
+	void Draw() override;
+
 };
 
