@@ -6,5 +6,13 @@ class Entity :
 public:
 	Entity();
 	~Entity();
+
+	float XVelocity;
+	float XAcceleration;
+
+	float YVeloctiy;
+	float YAcceleration;
+
+	
 };
 
