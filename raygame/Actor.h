@@ -8,9 +8,6 @@ public:
 	
 	~Actor();
 
-	float X();
-
-	float X(float input);
 
 	Actor* parent;
 
@@ -20,6 +17,9 @@ public:
 
 	float X();
 	float Y();
+
+	float X(float input);
+
 	float XAbsolute();
 	float Y(float input);
 	float YAbsolute();
