@@ -17,11 +17,11 @@ public:
 
 	float X();
 	float Y();
-
-	float X(float input);
+	float Y(float input);
+	float X(float input,float input2 = 0);
 
 	float XAbsolute();
-	float Y(float input);
+	
 	float YAbsolute();
 	float GetRotation();
 	float GetScale();

@@ -19,7 +19,15 @@ Entity::Entity(float x, float y)
 }
 void Entity::Update()
 {
-
+	//## Calculate velocity from acceleration ##//
+ //accelerate a objects 
+	XVelocity = XVelocity + XAcceleration * GetFrameTime();
+	YVelocity = YVelocity + YAcceleration * GetFrameTime();
+	//## Calculate position from velocity ##//
+	//update position from position
+	 X(X() + XVelocity * GetFrameTime());
+	 Y(Y() + YVelocity * GetFrameTime());
+	
 }
 
 void Entity::setXVelocity(float value)
